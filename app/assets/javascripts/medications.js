@@ -2,16 +2,19 @@ $(document).ready(function() {
 console.log($('.notice'))
 
 
-$(".notice").fadeOut(3000)
+$(".notice").fadeOut(2000)
 
 
 $("form > input").keyup( function() {
     if ($(this).val() == "") {
-      $(".submit_button").attr("disabled", "disabled")}
+      $(".submit_btn").attr("disabled", "disabled")}
     else{
-      $(".submit_button").removeAttr("disabled")
+      $(".submit_btn").removeAttr("disabled")
     }
 
 })
 
 }
+
+
+

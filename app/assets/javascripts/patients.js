@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
 
-$(".notice").fadeOut(3000);
+$(".notice").fadeOut(2000);
 
 $(".notice").on( function() {
-    $(".notice").fadeOut(3000);
+    $(".notice").fadeOut(2000);
 })
 
 $("form > input").keyup( function() {
     if ($(this).val() == "") {
-      $(".submit_button").attr("disabled", "disabled")}
+      $(".submit_btn").attr("disabled", "disabled")}
     else{
-      $(".submit_button").removeAttr("disabled")
+      $(".submit_btn").removeAttr("disabled")
   }
 })
 
@@ -35,11 +35,11 @@ $(".search_patients").click( function() {
   })
 })
 
-$(".page_number").click(function() {
-    var page_number = $(this).html()
-    console.log(page_number)
+$(".page_num").click(function() {
+    var page_num = $(this).html()
+    console.log(page_num)
     $(".patient_page").addClass("hidden")
-    $(".group_" + page_number).removeClass("hidden")
+    $(".group_" + page_num).removeClass("hidden")
 })
 
 
